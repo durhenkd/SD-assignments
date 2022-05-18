@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" spacing="30.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="presentation.controller.AgencyController">
+   <children>
+      <HBox spacing="20.0">
+         <children>
+            <Button fx:id="addDestinationBtn" maxHeight="-Infinity" maxWidth="-Infinity" mnemonicParsing="false" onAction="#openDestinationBox" prefHeight="35.0" prefWidth="150.0" text="Add Destination" />
+            <Pane maxWidth="1.7976931348623157E308" HBox.hgrow="ALWAYS" />
+            <Button fx:id="logOutBtn" maxWidth="-Infinity" mnemonicParsing="false" onAction="#logOut" prefHeight="35.0" prefWidth="80.0" text="Log Out" />
+         </children>
+      </HBox>
+      <VBox fx:id="addLocationBox" alignment="CENTER_RIGHT" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" spacing="5.0">
+         <children>
+            <HBox alignment="CENTER_LEFT" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" VBox.vgrow="ALWAYS">
+               <children>
+                  <Label prefWidth="100.0" text="Name:" />
+                  <TextField fx:id="destinationNameFLd" prefHeight="35.0" HBox.hgrow="ALWAYS" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="10.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308">
+               <children>
+                  <Label prefWidth="100.0" text="Country:" />
+                  <TextField fx:id="destinationCountryFld" prefHeight="35.0" HBox.hgrow="ALWAYS" />
+               </children>
+            </HBox>
+            <Button mnemonicParsing="false" onAction="#addDestination" prefHeight="35.0" prefWidth="150.0" text="Add Location" />
+         </children>
+      </VBox>
+      <Label fx:id="welcomeLbl" text="Label" />
+      <ScrollPane fx:id="destinationPane" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="605.0">
+         <content>
+            <VBox fx:id="destinationBox" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" spacing="10.0" />
+         </content>
+      </ScrollPane>
+   </children>
+   <padding>
+      <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+   </padding>
+</VBox>

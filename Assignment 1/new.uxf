@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="14.3.0">
+  <zoom_level>10</zoom_level>
+  <element>
+    <id>UMLPackage</id>
+    <coordinates>
+      <x>400</x>
+      <y>600</y>
+      <w>780</w>
+      <h>140</h>
+    </coordinates>
+    <panel_attributes>Percistence layer
+--
+
+bg=orange</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>580</x>
+      <y>650</y>
+      <w>440</w>
+      <h>60</h>
+    </coordinates>
+    <panel_attributes>PersistenceClass&lt;T&gt;
+bg=white
+layer=2</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLPackage</id>
+    <coordinates>
+      <x>400</x>
+      <y>430</y>
+      <w>780</w>
+      <h>140</h>
+    </coordinates>
+    <panel_attributes>Service layer
+--
+
+bg=orange</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>450</x>
+      <y>480</y>
+      <w>210</w>
+      <h>60</h>
+    </coordinates>
+    <panel_attributes>AccountService
+bg=white
+layer=2</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>690</x>
+      <y>480</y>
+      <w>220</w>
+      <h>60</h>
+    </coordinates>
+    <panel_attributes>UserService
+bg=white
+layer=2</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>930</x>
+      <y>480</y>
+      <w>220</w>
+      <h>60</h>
+    </coordinates>
+    <panel_attributes>AgencyService
+bg=white
+layer=2</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLPackage</id>
+    <coordinates>
+      <x>400</x>
+      <y>270</y>
+      <w>860</w>
+      <h>140</h>
+    </coordinates>
+    <panel_attributes>Presentation layer
+--
+
+bg=orange</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>450</x>
+      <y>320</y>
+      <w>210</w>
+      <h>60</h>
+    </coordinates>
+    <panel_attributes>LogInController
+bg=white
+layer=2</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>680</x>
+      <y>320</y>
+      <w>220</w>
+      <h>60</h>
+    </coordinates>
+    <panel_attributes>UserController
+bg=white
+layer=2</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>920</x>
+      <y>320</y>
+      <w>220</w>
+      <h>60</h>
+    </coordinates>
+    <panel_attributes>AgencyController
+bg=white
+layer=2</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1160</x>
+      <y>320</y>
+      <w>80</w>
+      <h>70</h>
+    </coordinates>
+    <panel_attributes>+
+other
+insignificant
+stuff
+bg=white
+layer=2</panel_attributes>
+    <additional_attributes/>
+  </element>
+</diagram>

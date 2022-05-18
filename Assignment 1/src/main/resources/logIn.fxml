@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+
+<HBox alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="presentation.controller.LogInController">
+   <children>
+      <VBox fx:id="userLogInBox" alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" spacing="10.0">
+         <children>
+            <Label fx:id="errorLbl" text="Label">
+               <VBox.margin>
+                  <Insets bottom="20.0" />
+               </VBox.margin>
+            </Label>
+            <TextField fx:id="userLogInEmailFld" maxWidth="-Infinity" prefHeight="35.0" prefWidth="300.0" promptText="username or email" />
+            <PasswordField fx:id="userLogInPassFld" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="35.0" prefWidth="300.0" promptText="password" />
+            <Button fx:id="userLogInBtn" mnemonicParsing="false" onAction="#userLogIn" prefHeight="35.0" prefWidth="300.0" text="Log In">
+               <VBox.margin>
+                  <Insets top="20.0" />
+               </VBox.margin>
+            </Button>
+            <Button fx:id="toUserRegisterBtn" mnemonicParsing="false" onAction="#toUserRegister" prefHeight="35.0" prefWidth="300.0" text="Register" />
+            <Button fx:id="toAgencyLogInBtn" mnemonicParsing="false" onAction="#toAgencyLogIn" prefHeight="35.0" prefWidth="300.0" text="Are you a Travel Agency?" />
+         </children>
+      </VBox>
+      <VBox fx:id="agencyLogInBox" alignment="CENTER" layoutX="10.0" layoutY="10.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" spacing="10.0">
+         <children>
+            <Label fx:id="errorLbl1" text="Label">
+               <VBox.margin>
+                  <Insets bottom="20.0" />
+               </VBox.margin>
+            </Label>
+            <TextField fx:id="agencyLogInEmailFld" maxWidth="-Infinity" prefHeight="35.0" prefWidth="300.0" promptText="email" />
+            <PasswordField fx:id="agencyLogInPassFld" maxWidth="-Infinity" prefHeight="35.0" prefWidth="300.0" promptText="password" />
+            <Button fx:id="agencyLogInBtn" mnemonicParsing="false" onAction="#agencyLogIn" prefHeight="35.0" prefWidth="300.0" text="Log In as an Travel Agency">
+               <VBox.margin>
+                  <Insets top="20.0" />
+               </VBox.margin>
+            </Button>
+            <Button fx:id="toAgencyRegisterBtn" mnemonicParsing="false" onAction="#toAgencyRegister" prefHeight="35.0" prefWidth="300.0" text="Register as an Travel Agency" />
+            <Button fx:id="agencyLogInBackBtn" layoutX="10.0" layoutY="243.0" mnemonicParsing="false" onAction="#toUserLogIn" prefHeight="35.0" prefWidth="300.0" text="Back To Regular User" />
+         </children>
+      </VBox>
+      <VBox fx:id="userRegisterBox" alignment="CENTER" layoutX="10.0" layoutY="10.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" spacing="10.0">
+         <children>
+            <Label fx:id="errorLbl2" text="Label">
+               <VBox.margin>
+                  <Insets bottom="20.0" />
+               </VBox.margin>
+            </Label>
+            <TextField fx:id="userRegisterFirstFld" maxWidth="-Infinity" prefHeight="35.0" prefWidth="300.0" promptText="first name" />
+            <TextField fx:id="userRegisterLastFld" layoutX="10.0" layoutY="33.0" maxWidth="-Infinity" prefHeight="35.0" prefWidth="300.0" promptText="last name" />
+            <TextField fx:id="userRegisterNameFld" layoutX="10.0" layoutY="55.0" maxWidth="-Infinity" prefHeight="35.0" prefWidth="300.0" promptText="username" />
+            <TextField fx:id="userRegisterEmailFld" layoutX="10.0" layoutY="210.0" maxWidth="-Infinity" prefHeight="35.0" prefWidth="300.0" promptText="email" />
+            <PasswordField fx:id="userRegisterPassFld" maxWidth="-Infinity" prefHeight="35.0" prefWidth="300.0" promptText="password" />
+            <PasswordField fx:id="userRegisterPassConFld" layoutX="10.0" layoutY="100.0" maxWidth="-Infinity" prefHeight="35.0" prefWidth="300.0" promptText="confirm password" />
+            <Button fx:id="userRegisterBtn" mnemonicParsing="false" onAction="#userRegister" prefHeight="35.0" prefWidth="300.0" text="Register">
+               <VBox.margin>
+                  <Insets top="20.0" />
+               </VBox.margin>
+            </Button>
+            <Button fx:id="userRegisterBackBtn" layoutX="10.0" layoutY="310.0" mnemonicParsing="false" onAction="#toUserLogIn" prefHeight="35.0" prefWidth="300.0" text="Back To Log In" />
+         </children>
+      </VBox>
+      <VBox fx:id="agencyRegisterBox" alignment="CENTER" layoutX="610.0" layoutY="10.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" spacing="10.0">
+         <children>
+            <Label fx:id="errorLbl3" text="Label">
+               <VBox.margin>
+                  <Insets bottom="20.0" />
+               </VBox.margin>
+            </Label>
+            <TextField fx:id="agencyRegisterNameFld" maxWidth="-Infinity" prefHeight="35.0" prefWidth="300.0" promptText="name" />
+            <TextField fx:id="agencyRegisterEmailFld" layoutX="10.0" layoutY="210.0" maxWidth="-Infinity" prefHeight="35.0" prefWidth="300.0" promptText="email" />
+            <TextArea fx:id="agencyRegisterDescFld" maxWidth="-Infinity" prefHeight="100.0" prefWidth="300.0" promptText="agency description" />
+            <PasswordField fx:id="agencyRegisterPassFld" maxWidth="-Infinity" prefHeight="35.0" prefWidth="300.0" promptText="password" />
+            <PasswordField fx:id="agencyRegisterPassConFld" layoutX="10.0" layoutY="100.0" maxWidth="-Infinity" prefHeight="35.0" prefWidth="300.0" promptText="confirm password" />
+            <Button fx:id="agencyRegisterBtn" mnemonicParsing="false" onAction="#agencyRegister" prefHeight="35.0" prefWidth="300.0" text="Register Travel Agency">
+               <VBox.margin>
+                  <Insets top="20.0" />
+               </VBox.margin>
+            </Button>
+            <Button fx:id="agencyRegisterBackBtn" layoutX="10.0" layoutY="333.0" mnemonicParsing="false" onAction="#toAgencyLogIn" prefHeight="35.0" prefWidth="300.0" text="Back To Log In" />
+         </children>
+      </VBox>
+   </children>
+</HBox>
